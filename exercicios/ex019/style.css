@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* 
+    Em HTML é id = CSS é # (Só pode um elemento)
+    Em HtML é class = CSS é . (Pode vários elementos)
+
+*/
+
+
+body {
+    background-color: rgba(89, 113, 121, 0.61);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgba(2, 46, 61, 0.767);
+    
+}
+
+#principal {
+    text-align: center;
+    background-color: rgba(51, 89, 170, 0.63);
+    color: rgba(47, 47, 179, 0.815);
+}
+
+h2 { 
+    color: rgb(32, 109, 134);
+}
+
+.basico {
+    color: #576AE0;    
+    font-weight: bold;
+}
+
+.intermediario {
+    color: #E1C518;
+}
+
+.avancado {
+    color:#E01D10;
+}
+
+.destaque {
+    background-color: #a157e7;
+}
+
+p {
+    text-indent: 30px;
+}
+
+::selection {
+    background: yellow;
+    color: black;
+  }
+  

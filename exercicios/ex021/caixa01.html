@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        body {
+            background-color: rgba(97, 235, 129, 0.884);
+            margin: 0px;
+        }
+
+        
+        h1 {/*BLOCK-LEVEL*/
+            /*LARGURA E ALTURA*/
+            width: 300px;  
+            height: 300px; /**/
+
+            /*COR DE FUNDD*/
+            background-color: lightgray; 
+          
+
+            /*BORDA
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            */
+            /*shorthands*/
+            border: 10px solid red;
+
+             /*LINHA EXTERNA*/
+             /* outline-width: 5px;
+             outline-style: dashed;
+             outline-color: magenta;
+             */
+             /*shorthands*/
+             outline: 5px dashed magenta;
+
+            /*MARGEM*/
+            /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            */
+            /*shorthands*/ 
+            margin: 20px auto 40px auto;
+
+
+
+            /*PREENCHIMENTO*/
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            /*shorthands*/
+            padding: 10px;
+        }
+
+        .link{/*INLINE-LEVEL*/
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: blueviolet; */
+            border: 10px solid blueviolet;
+            text-decoration: none;
+            background-color: lightgray;
+
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+            padding: 10px;
+        }
+
+        .proximo {
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px
+
+        }
+
+        .botao {
+            border: 3px;
+            background-color: rgba(7, 163, 163, 0.74);
+            border-radius: 30px;
+            backdrop-filter: bluer(2px);
+            transition-property: transform; /* Transforma (incluindo escala) será animada */
+            transition-duration: 0.4s; /* A duração da transição será de 0.4 segundos */
+            transition: ease-in-out; /* A velocidade da transição será suave no início e no fim */
+            cursor: pointer; /* indica que um link é clicavel*/
+            width: 150px;
+            height: 35px;
+        }
+
+        .botao:hover {
+            transform: scale(1.1); /* Aumenta o tamanho da caixa em 1.5 vezes ao passar o mouse */
+            width: 250;
+            height: 150;
+        }
+
+        .botao:active {
+            background-color: rgba(67, 36, 75, 0.815);
+            
+        }
+
+        #container {
+            display: block;
+            margin-top: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <h1>Exemplo de Caixas box-level</h1>
+    <p>Parágrafos também são box-level, mas os <a href="#" class="link">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+
+    <div id="container">
+        <button class="botao"><a href="caixa02.html" class="proximo">Vá para a segunda página</a></button>
+    </div><br>
+
+    <div>
+        <button class="botao"><a href="caixa03.html" class="proximo">Vá para terceira página</a></button>
+    </div>
+</body>
+</html>

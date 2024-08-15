@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        flex-direction:column;
+        height: 100vh;
+        color: #ffffff;
+    }
+
+h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+.centralizar0 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        justify-content: space-around;
+        flex-flow: nowrap;
+    }
+
+.centralizar0 img {
+        width: 300px;
+        height: 300px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .centralizar0 img:hover {
+        transform: scale(1.1);
+    }
+
+

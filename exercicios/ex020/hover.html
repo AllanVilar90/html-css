@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container { /*Define a posição relativa e o tamanho do containe*/
+            position: relative; /* Define o contêiner como relativo para posicionamento dos filhos */
+            display: inline-block; /* Faz com que o contêiner se ajuste ao tamanho do conteúdo */
+            width: 200px;
+        }
+
+        .hidden-text { /*Define o texto escondido e os seus efeitos visuais*/
+            display: none; /* Inicialmente esconde o texto */
+            color: red;
+            background-color: black;
+            position: absolute; /* Posiciona o texto escondido em relação ao contêiner */
+            top: 0; /* Alinha o texto escondido ao topo do contêiner */
+            left: 0; /* Alinha o texto escondido ao topo do contêiner */
+            width: 100%;
+        }
+
+         .text:hover + .hidden-text { /*Mostra o texto escondido quando o mouse está sobre ele*/
+        display: block; /* Define o comportamento do texto escondido quando o mouse está sobre o texto visível */
+        text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+           color: lightcoral; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div class="container">
+        <span class="text">Passe o mouse aqui</span>
+         <p class="hidden-text">VOCÊ FOI HACKEADO!!!</p>
+    </div>
+    
+
+
+
+
+    <p><a href="links.html" target="_self">Acesse a terceira página.</a></p>
+    <p><a href="pseudoclasse.html" target="_self">Volte pra a página anterior.</a></p>
+</body>
+</html>

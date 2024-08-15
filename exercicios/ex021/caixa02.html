@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(12, 34, 234);
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(232, 184, 12);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 0px 30px;
+        }
+
+        nav {
+            background-color: rgb(12, 34, 234);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.486);
+            border-radius: 20px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(235, 185, 14);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        
+        main {
+            background-color: rgb(232, 184, 12);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 30px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #noticias {
+        text-align: justify;
+        }
+
+        article {
+            background-color: rgb(232, 184, 12);
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(12, 34, 234);
+            color: rgb(235, 185, 14);
+        }
+
+        .proximo {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            padding: 10px
+
+        }
+
+        .botao {
+                
+            border: 3px;
+            background-color: rgb(232, 184, 12);
+            border-radius: 30px;
+            backdrop-filter: bluer(2px);
+            transition-property: transform; /* Transforma (incluindo escala) será animada */
+            transition-duration: 0.4s; /* A duração da transição será de 0.4 segundos */
+            transition: ease-in-out; /* A velocidade da transição será suave no início e no fim */
+            cursor: pointer; /* indica que um link é clicavel*/
+            width: 150px;
+            height: 35px;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+
+        .botao:hover {
+            transform: scale(1.1); /* Aumenta o tamanho da caixa em 1.5 vezes ao passar o mouse */
+            width: 250;
+            height: 150;
+          
+
+        }
+
+        .botao:active {
+            background-color:rgb(143, 9, 221);
+        }
+
+        #container {
+            display: block;
+            margin-top: 30px;
+            
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color:rgb(169, 145, 51);
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 10px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+            text-align: center;
+            padding: 10px;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <header> <!--cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav> <!--navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--menu principal-->
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+             <article>
+                <h2>Mentes Perigosas</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, minus reprehenderit. Itaque impedit omnis quas repellat quibusdam sunt modi in qui. Delectus debitis, hic blanditiis necessitatibus exercitationem voluptate minus assumenda!</p>
+             <aside>
+                <p>Livro escrito por Ana Beatriz Barbosa Silva</p>
+            </aside>
+        </article>
+        <article>
+
+        </article>
+        </section>
+    </main>
+
+    <div id="container">
+
+        <div>
+            <button class="botao">
+                <a href="caixa01.html" class="proximo">Volte para a página anterior</a>
+            </button>
+        </div><br>
+
+        <div>
+            <button class="botao">
+                <a href="caixa03.html" class="proximo">Vá para a terceira página</a>
+            </button>
+         </div>
+         
+    </div>
+    
+    <footer> <!--rodapé-->
+        <p>Desenvolvido por mim mesmo.</p>
+    </footer>  
+    
+    <div id="bola"> olha minha bola</div>
+</body>
+</html>

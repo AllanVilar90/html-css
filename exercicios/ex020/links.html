@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+
+         # = Id
+        . = Class
+        : = pseudo-class
+        :: = pseudo-element
+        > = childre
+        
+         */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*Paeudo-Classes*/
+        a { 
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {    /*Muda a cor do link quando já acessado */
+            color: darkred;
+        }
+        a:hover { /*Muda a cor do link quando o mouse esta posicionado em cima*/
+            color: black;
+            text-decoration: underline;
+            border: 4px solid rgb(177, 16, 16);
+        }
+
+        a:active { /*Muda a cor do Link quando clicado */
+            color: yellow;
+        }
+        
+        /*Pseudo-Elementos*/
+
+        .link::before { /*Insere elementos antes do conteúdo*/
+            content: '⚞ ';
+        }
+
+        .link::after { /*Insere elementos depois do conteúdo*/
+            content: ' ⚟';
+        } 
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/AllanVilar90" class="link" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://x.com/allanvilar7" class="link" target="_blank">Visite meu perfil do X</a></li>
+        <li><a href="https://www.instagram.com/allanvilar7/" class="link" target="_blank">Meu perfil do Instagram</a></li>
+    </ul>
+
+
+
+    <p><a href="pseudoclasse.html" target="_self">Volte para a primeira página.</a></p>
+    <p><a href="hover.html" target="_self">Volte para a página anterior.</a></p>
+    
+</body>
+</html>

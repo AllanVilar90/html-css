@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas Personalizadas</title>
+    <style>
+        body{
+            background-color: rgba(125, 159, 173, 0.877);
+        }
+
+        h1 {
+            border: 20px solid transparent;
+            padding: 10px;
+            /* border-image-source: url('bordas.png');
+            border-image-slice: 20;
+            border-image-repeat: repeat; */
+
+            /*shorthands*/
+            border-image: url('bordas.png') 27 repeat;
+        }
+
+        .proximo {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            padding: 10px
+
+        }
+
+        .botao {
+                
+            border: 3px;
+            background-color: rgba(152, 138, 122, 0.911);
+            border-radius: 30px;
+            backdrop-filter: bluer(2px);
+            transition-property: transform; /* Transforma (incluindo escala) será animada */
+            transition-duration: 0.4s; /* A duração da transição será de 0.4 segundos */
+            transition: ease-in-out; /* A velocidade da transição será suave no início e no fim */
+            cursor: pointer; /* indica que um link é clicavel*/
+            width: 150px;
+            height: 35px;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+
+        .botao:hover {
+            transform: scale(1.1); /* Aumenta o tamanho da caixa em 1.5 vezes ao passar o mouse */
+            width: 250;
+            height: 150;
+        }
+
+        .botao:active {
+            background-color: rgba(240, 151, 50, 0.918);
+        }
+
+        #container {
+            display: block;
+            margin-top: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de bordas</h1>
+
+    <div id="container">
+        <div>
+            <button class="botao"><a href="caixa02.html" class="proximo">Volte para página anterior</a>
+            </button>
+        </div><br>
+
+        <div>
+            <button class="botao"><a href="caixa01.html" class="proximo">Volte para primeira página</a>
+            </button>
+        </div>
+    </div>  
+    
+</body>
+</html>
