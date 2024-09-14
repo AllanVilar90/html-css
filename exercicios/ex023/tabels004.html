@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de Tabelas</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Rosane</td>
+                <td>Carandiru</td>
+                <td>Ilha das Flores</td>
+                <td>Vizinhos</td>
+            </tr>
+
+            <tr>
+                <td>Carine</td>
+                <td>Titanic</td>
+                <td>Ghost</td>
+                <td>Megarromantica</td>
+            </tr>
+
+            <tr>
+                <td>Heloisa</td>
+                <td>Cinderela</td>
+                <td>Barbie</td>
+                <td>Frozen</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Allan</td>
+                <td>O Poço</td>
+                <td>O Ritual</td>
+                <td>Ilha do Medo</td>
+            </tr>
+            
+            <tr>
+                <td>Ruan</td>
+                <td>Detona Ralph</td>
+                <td>Transformers</td>
+                <td>Os Incríveis</td>
+            </tr>
+
+            <tr>
+                <td>Victor</td>
+                <td>Shrek</td>
+                <td>A Era do Gelo</td>
+                <td>Lilo e Stitch</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
